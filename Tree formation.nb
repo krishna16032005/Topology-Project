@@ -1,0 +1,55 @@
+Notebook[{Cell[
+CellGroupData[{Cell[
+BoxData[{RowBox[{"n"," ","="," ",RowBox[{"Input","[","\"Enter the number of pairs\"","]"}]}],"\n",RowBox[
+{"pointlst"," ","="," ",RowBox[{"{","}"}]}],"\n",RowBox[{"parentlst"," ","="," ",RowBox[
+{"{",RowBox[{"NULL",","," ","NULL"}],"}"}]}],"\n",RowBox[{"childlst"," ","="," ",RowBox[
+{"{","}"}]}],"\n",RowBox[{"startlst"," ","="," ",RowBox[{"{","}"}]}],"\n",RowBox[
+{"endlst"," ","="," ",RowBox[{"{","}"}]}],"\n",RowBox[{"bendlst"," ","="," ",RowBox[
+{"{","}"}]}],"\n",RowBox[{"For","[",RowBox[{RowBox[{"i","=","1"}],","," ",RowBox[
+{"i","\[LessEqual]","n"}],","," ",RowBox[{"i","++"}],",","\n",RowBox[{RowBox[{"pointlst"," ","="," ",RowBox[
+{"Join","[",RowBox[{"pointlst",","," ",RowBox[{"{","i","}"}]}],"]"}]}],";","\n",RowBox[
+{"Print","[","pointlst","]"}],";","\n",RowBox[{"Print","[","parentlst","]"}],";","\n",RowBox[
+{"angles"," ","="," ",RowBox[{"Input","[","\"Enter angles of points of pair\""," ","]"}]}],";","\n",RowBox[
+{"bend"," ","="," ",RowBox[{"Input","[","\"Input bending angle for the pair\""," ","]"}]}],";","\n",RowBox[
+{"startlst"," ","="," ",RowBox[{"Join","[",RowBox[{"startlst",","," ",RowBox[{"{",RowBox[
+{"angles","[",RowBox[{"[","1","]"}],"]"}],"}"}]}],"]"}]}],";","\n",RowBox[{"endlst"," ","="," ",RowBox[
+{"Join","[",RowBox[{"endlst",","," ",RowBox[{"{",RowBox[{"angles","[",RowBox[{"[","2","]"}],"]"}],"}"}]}],"]"}]}],";","\n",RowBox[
+{"bendlst"," ","="," ",RowBox[{"Join","[",RowBox[{"bendlst",","," ",RowBox[{"{","bend","}"}]}],"]"}]}],";","\n",RowBox[
+{"templst"," ","="," ","pointlst"}],";","\n",RowBox[{"While","[",RowBox[{RowBox[{"templst"," ","\[NotEqual]",RowBox[
+{"{","i","}"}]}],",","\n",RowBox[{RowBox[{"temp"," ","="," ",RowBox[{"templst","[",RowBox[
+{"[","1","]"}],"]"}]}],";","\n",RowBox[{"While","[",RowBox[{RowBox[{"temp"," ","\[NotEqual]"," ","NULL"}],",","\n",RowBox[
+{RowBox[{RowBox[{"If","[",RowBox[{RowBox[{RowBox[{RowBox[{"angles","[",RowBox[{"[","1","]"}],"]"}]," ","\[GreaterEqual]"," ",RowBox[
+{"startlst","[",RowBox[{"[","temp","]"}],"]"}]}]," ","&&"," ",RowBox[{RowBox[{"angles","[",RowBox[
+{"[","2","]"}],"]"}]," ","\[LessEqual]"," ",RowBox[{"endlst","[",RowBox[{"[","temp","]"}],"]"}]}]}],",","\n",RowBox[
+{RowBox[{RowBox[{"parentlst","[",RowBox[{"[","i","]"}],"]"}]," ","="," ","temp"}],";","\n",RowBox[
+{"DeleteElements","[",RowBox[{"templst",","," ",RowBox[{"{","temp","}"}]}],"]"}],";","\n",RowBox[
+{"temp"," ","="," ",RowBox[{"parentlst","[",RowBox[{"[","temp","]"}],"]"}]}],";","\n",RowBox[
+{"Continue","[","]"}],";"}]}],"]"}],"\n",RowBox[{"DeleteElements","[",RowBox[{"templst",","," ",RowBox[
+{"{","temp","}"}]}],"]"}]}],";","\n",RowBox[{"temp"," ","="," ","NULL"}]}]}],"\n","]"}]}]}],"\n","]"}],";","\n",RowBox[
+{"Print","[","parentlst","]"}]}]}],"\n","]"}],"\n",RowBox[{"parentlst","\n"}]}],"Input",
+CellLabel -> "In[1]:= ",ExpressionUUID -> "d6cb014c-0605-45da-b185-6a7b90be57d8"],Cell[
+BoxData[
+"2",StandardForm],"Output",CellLabel -> "Out[1]= ",ExpressionUUID -> "9e7141d6-3dca-40dc-9499-36b8f1fda197"],Cell[
+BoxData[
+RowBox[{"{","}"}],StandardForm],"Output",CellLabel -> "Out[2]= ",ExpressionUUID -> "1569afe9-0aef-4664-b544-d5d251f5a374"],Cell[
+BoxData[
+RowBox[{"{",RowBox[{"NULL",",","NULL"}],"}"}],StandardForm],"Output",CellLabel -> "Out[3]= ",
+ExpressionUUID -> "b747f4b6-ea00-4091-bc62-fcca13292f21"],Cell[
+BoxData[RowBox[{"{","}"}],
+StandardForm],"Output",CellLabel -> "Out[4]= ",ExpressionUUID -> "add49bc0-287d-4d20-aebe-a0eb7b1049b7"],Cell[
+BoxData[
+RowBox[{"{","}"}],StandardForm],"Output",CellLabel -> "Out[5]= ",ExpressionUUID -> "df30ed39-6fcb-4404-8727-3dc58e1a9e02"],Cell[
+BoxData[
+RowBox[{"{","}"}],StandardForm],"Output",CellLabel -> "Out[6]= ",ExpressionUUID -> "d34155a0-81de-4e0c-8601-98b28bd14d67"],Cell[
+BoxData[
+RowBox[{"{","}"}],StandardForm],"Output",CellLabel -> "Out[7]= ",ExpressionUUID -> "8ce93efd-2233-4629-9af8-a40050f495e9"],Cell[
+BoxData[
+RowBox[{"{","1","}"}],StandardForm],"Print",ExpressionUUID -> "4b56a519-57d5-4485-b564-aedf9f8a71d1"],Cell[
+BoxData[
+RowBox[{"{",RowBox[{"NULL",",","NULL"}],"}"}],StandardForm],"Print",ExpressionUUID -> "c8945fe1-8bf5-4d1a-9183-27625f39fd9a"],Cell[
+BoxData[
+RowBox[{"{",RowBox[{"1",",","2"}],"}"}],StandardForm],"Print",ExpressionUUID -> "45e5d332-4bc4-47ee-aed7-87c4792ee335"],Cell[
+BoxData[
+RowBox[{"{",RowBox[{"NULL",",","NULL"}],"}"}],StandardForm],"Print",ExpressionUUID -> "133db1e3-c9dc-4f6e-9f05-f728431ce89e"]},
+Open],ExpressionUUID -> "b19fc69a-2470-4db5-b125-e0db14d759bf"]},StyleDefinitions -> "Default.nb",
+FrontEndVersion -> "14.1 for Wolfram Cloud 1.70 (October 17, 2024)"]
